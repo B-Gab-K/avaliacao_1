@@ -34,6 +34,7 @@ public class ProgramaAdapter extends RecyclerView.Adapter<ProgramaAdapter.Progra
         Programa programa = programaList.get(position);
         holder.nome.setText(programa.getNome());
         holder.vagas.setText("Vagas: " + programa.getVagas());
+        holder.data.setText("Data: " + programa.getData());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +42,7 @@ public class ProgramaAdapter extends RecyclerView.Adapter<ProgramaAdapter.Progra
                 Intent intent = new Intent(context, ActivityDetalhePrograma.class);
                 intent.putExtra("nomePrograma", programa.getNome());
                 intent.putExtra("vagas", programa.getVagas());
+                intent.putExtra("data", programa.getData());
                 context.startActivity(intent);
             }
         });
@@ -52,12 +54,13 @@ public class ProgramaAdapter extends RecyclerView.Adapter<ProgramaAdapter.Progra
     }
 
     public static class ProgramaViewHolder extends RecyclerView.ViewHolder {
-        TextView nome, vagas;
+        TextView nome, vagas, data;
 
         public ProgramaViewHolder(@NonNull View itemView) {
             super(itemView);
             nome = itemView.findViewById(R.id.nomePrograma);
             vagas = itemView.findViewById(R.id.vagasPrograma);
+            data = itemView.findViewById(R.id.dataPrograma);
         }
     }
 }

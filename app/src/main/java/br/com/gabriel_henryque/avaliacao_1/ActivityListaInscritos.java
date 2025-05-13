@@ -17,12 +17,12 @@ public class ActivityListaInscritos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_inscritos);
 
-        RecyclerView lista = findViewById(R.id.recyclerProgramas);
+        RecyclerView lista = findViewById(R.id.lista_inscritos);
         lista.setLayoutManager(new LinearLayoutManager(this));
 
         List<Programa> programaList = new ArrayList<>();
 
-        programaList.add(new Programa("Zumba na Praça", "20"));
+        programaList.add(new Programa("Zumba na Praça", "20", "Quarta às 19:00"));
 
         ProgramaAdapter adapter = new ProgramaAdapter(programaList);
         lista.setAdapter(adapter);

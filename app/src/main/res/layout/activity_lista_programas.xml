@@ -4,7 +4,6 @@
     android:id="@+id/lista_programas"
     android:orientation="vertical"
     android:background="@android:color/white"
-    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityListaProgramas">
@@ -17,8 +16,16 @@
         android:layout_height="wrap_content"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerProgramas"
+        android:id="@+id/recycler_programa"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu"
+        style="@style/BottomNavStyle"/>
 </LinearLayout>

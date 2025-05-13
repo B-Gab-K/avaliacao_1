@@ -24,16 +24,18 @@ public class ActivityLogin extends AppCompatActivity {
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String usuario = edtEmail.getText().toString().trim();
+                String senha = edtSenha.getText().toString().trim();
 
-                String usuario = edtEmail.getText().toString();
-
-                if (usuario.equalsIgnoreCase("admin")) {
-                    // Logar como um ADMIN
-                    startActivity(new Intent(ActivityLogin.this, ActivityGerenciarProgramas.class));
+                if (usuario.equalsIgnoreCase("gabriel@email.com") && senha.equals("123")) {
+                    // Logar como ADMIN
+                    startActivity(new Intent(ActivityLogin.this, ActivityEstatisticasAdmin.class));
                 } else {
-                    // Logar como um CIDADÃO
-                    startActivity(new Intent(ActivityLogin.this, ActivityListaProgramas.class));
+                    // Logar como CIDADÃO
+                    startActivity(new Intent(ActivityLogin.this, MainActivity.class));
                 }
+
+                finish();
             }
         });
     }

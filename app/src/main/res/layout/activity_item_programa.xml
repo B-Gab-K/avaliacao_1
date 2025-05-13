@@ -23,17 +23,22 @@
 
         <TextView
             android:id="@+id/nomePrograma"
-            android:text="Nome do Programa"
-            android:textSize="16sp"
+            android:text="Programa"
             android:textStyle="bold"
+            android:textSize="16sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/vagasPrograma"
-            android:text="Vagas disponíveis: 0"
-            android:textSize="14sp"
+            android:text="Vagas: 10"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dataPrograma"
+            android:text="Data: 10/06/2025"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>

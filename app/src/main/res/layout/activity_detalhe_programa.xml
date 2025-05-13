@@ -29,6 +29,14 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:id="@+id/textData"
+            android:text="Data: 10/06/2025"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
             android:id="@+id/textVagas"
             android:text="Vagas disponíveis: 12"
             android:layout_marginTop="8dp"

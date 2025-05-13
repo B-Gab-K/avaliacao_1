@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.Avaliacao_1" parent="Base.Theme.Avaliacao_1" />
+
+    <style name="BottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="backgroundTint">#2962FF</item> <!-- Fundo azul -->
+        <item name="itemIconTint">@color/bottom_nav_item_color</item>
+        <item name="itemTextColor">@color/bottom_nav_item_color</item>
+    </style>
 </resources>
